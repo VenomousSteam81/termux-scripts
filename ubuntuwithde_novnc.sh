@@ -3,7 +3,7 @@ echo 'Install process may take a while! Sit tight, maybe grab some coffee'
 echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blob/main/README-en.md desktop and noVNC proxy, please wait...'
 pkg update -y
 pkg upgrade -y
-pkg i proot-distro -y
+pkg i proot-distro curl -y
 echo 'Installed and updated packages, now installing Ubuntu'
 proot-distro install ubuntu
 echo 'Installed Ubuntu, now logging in...'
