@@ -1,15 +1,23 @@
+#!/data/data/com.termux/files/usr/bin/env bash
+
 clear
+
 echo 'Install process may take a while! Sit tight, maybe grab some coffee'
 echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blob/main/README-en.md desktop and noVNC proxy, please wait...'
 pkg update -y
 pkg upgrade -y
 pkg i proot-distro curl -y
+
+clear
+
 echo 'Installed and updated packages, now installing Ubuntu'
 proot-distro install ubuntu
 echo 'Installed Ubuntu, now logging in...'
 wait 3
 proot-distro login ubuntu
+
 clear
+
 echo 'Installing nessecary packages, you might need to hit enter...'
 apt install git curl
 curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash
