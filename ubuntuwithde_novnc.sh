@@ -34,11 +34,20 @@ echo 'Installing nessecary packages, you might need to hit enter...'
 apt install git curl
 curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash
 git clone https://github.com/noVNC/noVNC
+
+clear
+echo 'Done with those, now doing last touches... follow all on-screen instructions!'
+sleep 3
+
+apt install -y tigervnc*
+
+clear
 echo 'Done... follow next steps'
 
-sleep 1
+sleep 3
 clear
 
 echo 'To start the vnc server, run vncserver -listen tcp'
-echo 'To start the proxy, cd into noVNC, run vncserver, then ./utils/novnc_proxy --vnc localhost:59xx, where xx is the port number of vncserver'
+echo 'To stop it, run vncserver -kill :x, where x is the server port'
+echo 'To start the proxy, cd into noVNC, run vncserver, then ./utils/novnc_proxy --vnc localhost:59xx, where xx is the server port'
 echo 'Make sure to leave issue reports on the GitHub page, https://github.com/VenomousSteam81/termux-scripts, if you run into errors or issues with these scrips!'
