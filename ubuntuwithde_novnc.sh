@@ -2,6 +2,7 @@
 
 clear
 
+cd $HOME
 echo 'Install process may take a while! Sit tight, maybe grab some coffee'
 echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blob/main/README-en.md desktop and noVNC proxy, please wait...'
 pkg update -y
