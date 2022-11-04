@@ -8,6 +8,8 @@ clear
 #(proot) in termux
 #creator: VenomousSteam81
 
+echo 'THIS SCRIPT IS SOMEWHAT BROKEN. USE AT YOUR OWN RISK'
+
 cd $HOME
 echo 'Install process may take a while! Sit tight, maybe grab some coffee'
 echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blob/main/README-en.md desktop and noVNC proxy, please wait...'
@@ -15,8 +17,8 @@ echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blo
 sleep 3
 clear
 
-apt -y update
-apt -y upgrade
+apt update -y
+apt upgrade -y
 apt install -y proot-distro curl
 
 clear
@@ -31,7 +33,7 @@ proot-distro login ubuntu
 clear
 
 echo 'Installing nessecary packages, you might need to hit enter...'
-apt install git curl
+apt install -y git curl
 curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash
 git clone https://github.com/noVNC/noVNC
 
