@@ -5,16 +5,21 @@ clear
 cd $HOME
 echo 'Install process may take a while! Sit tight, maybe grab some coffee'
 echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blob/main/README-en.md desktop and noVNC proxy, please wait...'
+
+sleep 3
+clear
+
 pkg update -y
 pkg upgrade -y
 pkg i proot-distro curl -y
 
 clear
+echo 'Installed and updated packages, now installing Ubuntu...'
+sleep 3
 
-echo 'Installed and updated packages, now installing Ubuntu'
 proot-distro install ubuntu
 echo 'Installed Ubuntu, now logging in...'
-wait 3
+sleep 2
 proot-distro login ubuntu
 
 clear
