@@ -4,7 +4,7 @@ clear
 
 #this script will configure a graphical user interface 
 #(xfce4, credits to @Yisus7u7)
-#and an ubuntu distro
+#inside an ubuntu distro
 #(proot) in termux
 #creator: VenomousSteam81
 
