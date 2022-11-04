@@ -15,9 +15,9 @@ echo 'Installing Ubuntu with https://github.com/Yisus7u7/termux-desktop-xfce/blo
 sleep 3
 clear
 
-pkg update -y
-pkg upgrade -y
-pkg i proot-distro curl -y
+apt -y update
+apt -y upgrade
+apt install -y proot-distro curl
 
 clear
 echo 'Installed and updated packages, now installing Ubuntu...'
