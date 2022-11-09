@@ -29,7 +29,7 @@ clear
 echo "Done with updating and installing packages, now installing nvm..."
 sleep 3
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-echo "You shouldn't have to insert stuff into your \'.bashrc\' or \'etc/profile\'"
+echo "You shouldn't have to insert stuff into your .bashrc or etc/profile"
 echo "Exiting..."
 sleep 4
 exit
