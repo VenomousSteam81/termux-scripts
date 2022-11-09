@@ -1,5 +1,6 @@
-clear
+#!/data/data/com.termux/files/usr/bin/env bash
 
+clear
 cd $HOME
 echo "Installing codeserver with npm"
 echo "THIS MAY TAKE A WHILE..."
