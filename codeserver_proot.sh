@@ -11,13 +11,13 @@ clear
 # update packages and install proot-distro
 pkg update -y
 pkg install proot-distro -y
-proot-distro install ubuntu
+proot-distro install debian
 echo "Done! Logging into the proot-distro..."
 sleep 3
 clear
 
 # login and install packages into proot-distro
-proot-distro login ubuntu
+proot-distro login debian
 echo "Logged in! Updating and installing packages..."
 sleep 2
 apt update
@@ -33,6 +33,7 @@ echo "You shouldn't have to insert stuff into your .bashrc or etc/profile"
 export NVM_DIR="$HOME/bash-stuff/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+sleep 3
 echo "Now installing NodeJS v16..."
 nvm install v16
 
