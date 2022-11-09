@@ -6,14 +6,7 @@ echo "THIS MAY TAKE A WHILE..."
 sleep 3
 clear
 
-# change termux package repo
-echo "Choose \"Main Repo\", then \"Mirrors by Grimler Hosted on grimler.se\""
-sleep 6
-termux-change-repo
-
 # update and upgrade packages
-echo "I see you are done. Now updating and upgrading..."
-sleep 3
 pkg update -y
 pkg upgrade -y
 
