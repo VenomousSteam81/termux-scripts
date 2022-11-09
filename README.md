@@ -13,7 +13,7 @@ to install `codeserver_proot` (errors out, not going to fix right now), run
 curl -sLf https://raw.githubusercontent.com/VenomousSteam81/termux-scripts/main/codeserver_proot.sh | bash
 ```
 
-to install `codeserver`, run
+to install `codeserver_npm`, run
 ```sh
-curl -sLf https://raw.githubusercontent.com/VenomousSteam81/termux-scripts/main/codeserver.sh | bash
+curl -sLf https://raw.githubusercontent.com/VenomousSteam81/termux-scripts/main/codeserver_npm.sh | bash
 ```
